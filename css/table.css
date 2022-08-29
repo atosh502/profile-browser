@@ -1,0 +1,120 @@
+.table-header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-header-col .fa-sort {
+  padding-left: 0.5rem;
+}
+
+.sort-column {
+  color: #2b41b2b3;
+}
+
+.table-row {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table-header > div {
+  padding-left: 0.25%;
+}
+
+.table-row > div {
+  padding-left: 0.25%;
+  padding-right: 0.25%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.table-first-col {
+  width: 7%;
+}
+
+.checkbox-star-initial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.initials {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #dce3e6;
+}
+
+.first-name {
+  font-weight: 550;
+  width: 13%;
+  cursor: pointer;
+}
+
+.company {
+  width: 10%;
+}
+
+.title {
+  width: 10%;
+}
+
+.email {
+  width: 20%;
+}
+
+.owned-by {
+  width: 10%;
+}
+
+.street {
+  width: 10%;
+}
+
+.created {
+  width: 10%;
+}
+
+.last-contacted {
+  width: 13%;
+}
+
+.font-blue {
+  color: #2b41b2b3;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.selected-row {
+  background-color: rgb(128, 128, 128, 0.1);
+}
+
+.selected-row > div {
+  color: black;
+}

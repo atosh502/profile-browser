@@ -1,0 +1,138 @@
+@import url("index.css");
+
+.sidebar {
+  height: 100%;
+  width: 14%;
+  background-color: var(--darkblue);
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+.sidebar-flex {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 0.325rem;
+  padding-bottom: 0.325rem;
+}
+
+.menu-contents {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  margin-left: 14%;
+}
+
+.profile-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.profile-text {
+  padding-left: 0.875rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-company {
+  font-size: 0.725rem;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.profile-info:first-child {
+  flex: 1;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.7;
+  padding-left: 0.475rem;
+  padding-right: 1.025rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-index {
+  color: #5b6bbd;
+  background-color: #c2c8e7;
+  padding: 1% 2%;
+  font-size: 0.625rem;
+  border-radius: 10%;
+}
+
+.menu-icon {
+  margin-left: 4%;
+}
+
+.menu-name {
+  margin-left: 10%;
+}
+
+.selected {
+  opacity: 1;
+  background-color: #53415f;
+  border-left: 2px solid #2b41b2;
+}
+
+.menu-item:hover {
+  opacity: 1;
+  background-color: #53415f;
+}
+
+.menu-group-divider {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  opacity: 0.1;
+}
+
+.menu-icon-right {
+  flex: 1;
+  transform: scaleX(-1);
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
+.company-logo-footer {
+  display: flex;
+  padding: 1rem 1rem;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-name {
+  font-family: caslonFont;
+  font-size: 2rem;
+}

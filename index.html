@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Browser</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/filter-bar.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/side-panel.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.1.2-web/css/all.css">
+    <script defer src="./assets/fontawesome-free-6.1.2-web/js/all.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-flex">
+            <div class="menu-contents">
+
+                <!-- profile info -->
+                <div class="profile-info">
+                    <div class="profile-wrapper">
+                        <img loading="lazy" class="profile-avatar" src="./assets/images/profile.png"
+                            alt="Profile picture of a person">
+                        <div class="profile-text">
+                            <div class="profile-name">
+                                Kelly Cheng
+                            </div>
+                            <div class="profile-company">
+                                Cooper
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidebar-collapse">
+                        <i class="fa-solid fa-xmark fa-lg"></i>
+                    </div>
+                </div>
+
+                <div class="menu-group">
+                    <!-- dashboard -->
+                    <div class="menu-item">
+                        <div class="menu-index">1</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="menu-name">Dashboard</div>
+                        <div class="menu-icon-right"></div>
+                    </div>
+                </div>
+
+                <div class="menu-group-divider">
+                    <hr />
+                </div>
+
+                <div class="menu-group">
+                    <!-- leads -->
+                    <div class="menu-item">
+                        <div class="menu-index">2</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                        <div class="menu-name">Leads</div>
+                        <div class="menu-icon-right">
+                            <i class="fa-solid fa-unlock fa-xs"></i>
+                        </div>
+                    </div>
+
+                    <!-- people -->
+                    <div class="menu-item selected">
+                        <div class="menu-index">3</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="menu-name">People</div>
+                    </div>
+
+                    <!-- companies -->
+                    <div class="menu-item">
+                        <div class="menu-index">4</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="menu-name">Companies</div>
+                    </div>
+
+                    <!-- pipelines -->
+                    <div class="menu-item">
+                        <div class="menu-index">5</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div class="menu-name">Pipelines</div>
+                    </div>
+
+                    <!-- projects -->
+                    <div class="menu-item">
+                        <div class="menu-index">6</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="menu-name">Projects</div>
+                    </div>
+                </div>
+
+                <div class="menu-group-divider">
+                    <hr />
+                </div>
+
+                <div class="menu-group">
+                    <!-- tasks -->
+                    <div class="menu-item">
+                        <div class="menu-index">7</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-square-check"></i>
+                        </div>
+                        <div class="menu-name">Tasks</div>
+                    </div>
+
+                    <!-- Marketing Tools -->
+                    <div class="menu-item">
+                        <div class="menu-index not-visible">8</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="menu-name">Marketing Tools</div>
+                    </div>
+
+                    <!-- My Tracked Emails -->
+                    <div class="menu-item">
+                        <div class="menu-index">8</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="menu-name">My Tracked Emails</div>
+                    </div>
+
+                    <!-- reports -->
+                    <div class="menu-item">
+                        <div class="menu-index not-visible">8</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div class="menu-name">Reports</div>
+                    </div>
+
+                    <!-- Legacy reports -->
+                    <div class="menu-item">
+                        <div class="menu-index">9</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-square-poll-vertical"></i>
+                        </div>
+                        <div class="menu-name">Legacy reports</div>
+                    </div>
+                </div>
+
+                <div class="menu-group-divider">
+                    <hr />
+                </div>
+
+                <div class="menu-group">
+                    <!-- Settings -->
+                    <div class="menu-item">
+                        <div class="menu-index">0</div>
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="menu-name">Settings</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company-logo-footer">
+                <div class="company-name">:copper</div>
+                <div class="footer-options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- navbar -->
+    <main>
+        <div class="header">
+            <div class="tab-title">People</div>
+            <div class="search-bar">
+                <input type="text" class="search-input"
+                    placeholder="&#x1F50D;  Search by name, email, domain or phone number">
+            </div>
+            <div class="nav-icons">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-plus fa-lg"></i>
+                </div>
+                <div class="nav-icon">
+                    <i class="fa-solid fa-bell fa-lg icon-with-badge"></i>
+                    <div class="icon-badge">47</div>
+                </div>
+                <div class="nav-icon">
+                    <i class="fa-solid fa-p fa-lg"></i>
+                </div>
+                <div class="nav-icon">
+                    <i class="fa-solid fa-circle-question fa-lg"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="filter-bar">
+                <div class="filter-options">
+                    <select name="group-select" id="group-select" class="group-select">
+                        <option value="all" selected>All People (156663)</option>
+                    </select>
+                    <button class="add-new-btn">
+                        ADD NEW
+                    </button>
+                </div>
+                <div class="filter-icons">
+                    <div class="filter-icon">
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    </div>
+                    <div class="filter-icon">
+                        <i class="fa-solid fa-user fa-lg"></i>
+                    </div>
+                    <div class="filter-icon">
+                        <i class="fa-solid fa-gear fa-lg"></i>
+                    </div>
+                    <div class="filter-icon">
+                        <i class="fa-solid fa-filter fa-lg"></i>
+                        <span class="filter-icon-label">Filters</span>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table-header">
+                    <div class="table-first-col">
+                        <input type="checkbox" id="select-all" name="select-all" value="Bike">
+                    </div>
+                    <div class="table-header-col sort-column first-name">
+                        <span>First Name </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <div class="table-header-col company">
+                        <span>Company </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <div class="table-header-col title">
+                        <span>Title </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <div class="table-header-col email">
+                        <span>Email </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <div class="table-header-col owned-by">
+                        <span>Owned By </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <div class="table-header-col street">
+                        <span>Street </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <div class="table-header-col created">
+                        <span>Created </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                    <div class="table-header-col last-contacted">
+                        <span>Last Contacted </span>
+                        <i class="fa-solid fa-sort"></i>
+                    </div>
+                </div>
+
+                <div class="table-data" id="table-data">
+                </div>
+                <i class="fa-solid fa-circle-question help-icon"></i>
+
+                <div id="profile-info-side">
+                    <div class="right-sidebar-icons">
+                        <div id="close-right-sidebar">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                        <div class="right-sidebar-icons-group">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                    <div class="profile-detail-header">
+                        <div class="profile-detail-initials" id="profile-detail-initials">IO</div>
+                        <div class="profile-detail-name">
+                            <div class="profile-detail-first-name" id="profile-detail-first-name">Alan Sherry</div>
+                            <div class="profile-detail-company" id="profile-detail-company">Zepter</div>
+                        </div>
+                    </div>
+
+                    <div class="profile-detail-tabs">
+                        <div class="profile-detail-tab">DETAILS</div>
+                        <div class="profile-detail-activity">ACTIVITY</div>
+                        <div class="profile-detail-related">RELATED</div>
+                    </div>
+
+                    <div class="profile-detail-list">
+                        <div class="detail-group">
+                            <div class="detail-item-name-group gray">
+                                <div class="detail-label-name">Name</div>
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                            <div class="detail-item-name" id="detail-item-name">Alan Cherry</div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label-company">Company</div>
+                            </div>
+                            <div class="detail-item-company" id="detail-time-company">Zepter</div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label-title">Title</div>
+                            </div>
+                            <div class="detail-item-title" id="detail-item-title">Manager</div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label-email">Work Email</div>
+                            </div>
+                            <div class="detail-item-email" id="detail-item-email">abac@gmail.com</div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label-phone">Work Phone</div>
+                            </div>
+                            <div class="detail-item-phone">412412421421</div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label">Rating</div>
+                            </div>
+                            <div class="detail-item-rating">
+                                <div>- Select Rating -</div>
+                                <div class="icon-sm-size">&#9660;</div>
+                            </div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label">Status</div>
+                            </div>
+                            <div class="detail-item-status">
+                                <div>- Select Status -</div>
+                                <div class="icon-sm-size">&#9660;</div>
+                            </div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label">Recycled Reasons</div>
+                            </div>
+                            <div class="detail-item-reasons">
+                                <div>- Select Recycled Reasons -</div>
+                                <div class="icon-sm-size">&#9660;</div>
+                            </div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label-rating">Owner</div>
+                            </div>
+                            <div class="detail-item-reasons">
+                                <div class="detail-item-owner" id="detail-item-owner">Allen Cherry</div>
+                                <div class="icon-sm-size">&#10006</div>
+                            </div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label">AE Assignee</div>
+                            </div>
+                            <div class="detail-item-assignee">
+                                <div>- Select AE Assignee -</div>
+                                <div class="icon-sm-size">&#9660;</div>
+                            </div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label">Account Owner</div>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked />
+                            </div>
+                        </div>
+                        <div class="detail-group">
+                            <div class="detail-item-group gray">
+                                <div class="detail-label-company">Company Size</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main body -->
+
+</body>
+
+</html>

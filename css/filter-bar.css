@@ -1,0 +1,56 @@
+.filter-bar {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.group-select {
+  padding: 0.6%;
+  font-size: 1rem;
+  font-weight: 550;
+  border-radius: 4px;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-new-btn {
+  font-weight: 550;
+  padding: 0.5% 1.5%;
+  margin-left: 1%;
+  border-radius: 25px;
+  border: 0;
+  color: white;
+  background-color: #2e43b2;
+}
+
+.add-new-btn::after {
+  content: "\25BC";
+  font-size: 0.725rem;
+  padding-left: 0.725rem;
+}
+
+.filter-icons {
+  display: flex;
+  color: darkgray;
+  flex-direction: row;
+}
+
+.filter-icons .filter-icon {
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.filter-options {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-icon-label {
+  font-weight: 550;
+}
