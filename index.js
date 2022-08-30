@@ -1,6 +1,229 @@
 (async () => {
-    const response = await fetch('./data.json');
-    const { data: users } = await response.json();
+    // const response = await fetch('./data.json');
+    // const { data: users } = await response.json();
+
+    const users = [
+        {
+            "ID": "1",
+            "JobTitle": "Steward",
+            "FirstNameLastName": "Jane Ulyatt",
+            "Company": "Team Guard SRL",
+            "Email": "Jane_Ulyatt2945@vetan.org",
+            "OwnedBy": "Jane Ulyatt",
+            "Street": "Ensign   Alley, 889",
+            "Created": "12/29/2430",
+            "LastContacted": "10/30/0055"
+        },
+        {
+            "ID": "2",
+            "JobTitle": "Inspector",
+            "FirstNameLastName": "Leanne Darcy",
+            "Company": "DynCorp",
+            "Email": "Leanne_Darcy1635@nimogy.biz",
+            "OwnedBy": "Leanne Darcy",
+            "Street": "Comet House  Crossroad, 3937",
+            "Created": "5/25/7210",
+            "LastContacted": "4/11/5107"
+        },
+        {
+            "ID": "3",
+            "JobTitle": "Assistant Buyer",
+            "FirstNameLastName": "Alan Sherry",
+            "Company": "Zepter",
+            "Email": "Alan_Sherry6262@bretoux.com",
+            "OwnedBy": "Alan Sherry",
+            "Street": "Hammersmith  Road, 5123",
+            "Created": "12/24/8460",
+            "LastContacted": "5/13/5019"
+        },
+        {
+            "ID": "4",
+            "JobTitle": "Software Engineer",
+            "FirstNameLastName": "Brad Bayliss",
+            "Company": "Team Guard SRL",
+            "Email": "Brad_Bayliss6188@irrepsy.com",
+            "OwnedBy": "Brad Bayliss",
+            "Street": "Fieldstone Street, 7192",
+            "Created": "5/25/8269",
+            "LastContacted": "2/21/3182"
+        },
+        {
+            "ID": "5",
+            "JobTitle": "Assistant Buyer",
+            "FirstNameLastName": "Harmony Allwood",
+            "Company": "It Smart Group",
+            "Email": "Harmony_Allwood2401@sveldo.biz",
+            "OwnedBy": "Harmony Allwood",
+            "Street": "Garfield Pass, 3753",
+            "Created": "6/26/3680",
+            "LastContacted": "8/14/0621"
+        },
+        {
+            "ID": "6",
+            "JobTitle": "Cash Manager",
+            "FirstNameLastName": "Amelia Gosling",
+            "Company": "It Smart Group",
+            "Email": "Amelia_Gosling4773@elnee.tech",
+            "OwnedBy": "Amelia Gosling",
+            "Street": "Bekesbourne   Pass, 4334",
+            "Created": "8/11/1870",
+            "LastContacted": "12/23/3310"
+        },
+        {
+            "ID": "7",
+            "JobTitle": "Fabricator",
+            "FirstNameLastName": "Joy Upton",
+            "Company": "Demaco",
+            "Email": "Joy_Upton190@bulaffy.com",
+            "OwnedBy": "Joy Upton",
+            "Street": "Sheringham   Crossroad, 8160",
+            "Created": "4/20/8610",
+            "LastContacted": "11/26/2348"
+        },
+        {
+            "ID": "8",
+            "JobTitle": "Laboratory Technician",
+            "FirstNameLastName": "Kaylee Lucas",
+            "Company": "Comcast",
+            "Email": "Kaylee_Lucas5544@corti.com",
+            "OwnedBy": "Kaylee Lucas",
+            "Street": "Erindale Drive, 7547",
+            "Created": "2/18/2442",
+            "LastContacted": "8/15/3354"
+        },
+        {
+            "ID": "9",
+            "JobTitle": "Budget Analyst",
+            "FirstNameLastName": "Chanelle Mccormick",
+            "Company": "Zepter",
+            "Email": "Chanelle_Mccormick675@vetan.org",
+            "OwnedBy": "Chanelle Mccormick",
+            "Street": "Carolina  Pass, 8610",
+            "Created": "4/17/8723",
+            "LastContacted": "9/17/3220"
+        },
+        {
+            "ID": "10",
+            "JobTitle": "Mobile Developer",
+            "FirstNameLastName": "Lily Horton",
+            "Company": "Leadertech Consulting",
+            "Email": "Lily_Horton9164@yahoo.com",
+            "OwnedBy": "Lily Horton",
+            "Street": "Camley   Crossroad, 3683",
+            "Created": "4/30/7737",
+            "LastContacted": "7/21/7624"
+        },
+        {
+            "ID": "11",
+            "JobTitle": "Accountant",
+            "FirstNameLastName": "Lorraine Rixon",
+            "Company": "It Smart Group",
+            "Email": "Lorraine_Rixon7610@hourpy.biz",
+            "OwnedBy": "Lorraine Rixon",
+            "Street": "Clere  Walk, 1810",
+            "Created": "11/24/0300",
+            "LastContacted": "11/13/4136"
+        },
+        {
+            "ID": "12",
+            "JobTitle": "Restaurant Manager",
+            "FirstNameLastName": "Matt Fowler",
+            "Company": "UPC",
+            "Email": "Matt_Fowler5644@gembat.biz",
+            "OwnedBy": "Matt Fowler",
+            "Street": "Virginia Crossroad, 5841",
+            "Created": "3/18/3002",
+            "LastContacted": "1/5/9262"
+        },
+        {
+            "ID": "13",
+            "JobTitle": "Operator",
+            "FirstNameLastName": "Mina Walsh",
+            "Company": "It Smart Group",
+            "Email": "Mina_Walsh9239@sveldo.biz",
+            "OwnedBy": "Mina Walsh",
+            "Street": "South Vale, 695",
+            "Created": "7/15/2011",
+            "LastContacted": "2/8/4699"
+        },
+        {
+            "ID": "14",
+            "JobTitle": "Investment  Advisor",
+            "FirstNameLastName": "Kimberly Walton",
+            "Company": "21st Century Fox",
+            "Email": "Kimberly_Walton9078@bulaffy.com",
+            "OwnedBy": "Kimberly Walton",
+            "Street": "Capeners  Boulevard, 2850",
+            "Created": "1/29/1429",
+            "LastContacted": "5/24/8711"
+        },
+        {
+            "ID": "15",
+            "JobTitle": "Global Logistics Supervisor",
+            "FirstNameLastName": "Zoe Drake",
+            "Company": "Telekom",
+            "Email": "Zoe_Drake6120@kideod.biz",
+            "OwnedBy": "Zoe Drake",
+            "Street": "Coal Wharf  Road, 5140",
+            "Created": "4/14/8544",
+            "LastContacted": "8/8/0160"
+        },
+        {
+            "ID": "16",
+            "JobTitle": "Associate Professor",
+            "FirstNameLastName": "Naomi Ebbs",
+            "Company": "Carrefour",
+            "Email": "Naomi_Ebbs8948@vetan.org",
+            "OwnedBy": "Naomi Ebbs",
+            "Street": "Edwin   Pass, 873",
+            "Created": "6/5/2147",
+            "LastContacted": "10/18/9191"
+        },
+        {
+            "ID": "17",
+            "JobTitle": "HR Coordinator",
+            "FirstNameLastName": "Logan Reynolds",
+            "Company": "Comcast",
+            "Email": "Logan_Reynolds1064@qater.org",
+            "OwnedBy": "Logan Reynolds",
+            "Street": "Argyle  Route, 7242",
+            "Created": "1/25/2388",
+            "LastContacted": "12/1/4903"
+        },
+        {
+            "ID": "18",
+            "JobTitle": "Associate Professor",
+            "FirstNameLastName": "Phillip Owens",
+            "Company": "UPC",
+            "Email": "Phillip_Owens8347@guentu.biz",
+            "OwnedBy": "Phillip Owens",
+            "Street": "Cheltenham  Lane, 6891",
+            "Created": "10/16/0522",
+            "LastContacted": "12/24/4014"
+        },
+        {
+            "ID": "19",
+            "JobTitle": "Service Supervisor",
+            "FirstNameLastName": "Judith Edwards",
+            "Company": "Biolife Grup",
+            "Email": "Judith_Edwards6870@cispeto.com",
+            "OwnedBy": "Judith Edwards",
+            "Street": "Durweston   Way, 9345",
+            "Created": "11/29/0709",
+            "LastContacted": "1/6/9597"
+        },
+        {
+            "ID": "20",
+            "JobTitle": "Retail Trainee",
+            "FirstNameLastName": "Domenic Osman",
+            "Company": "Apple Inc.",
+            "Email": "Domenic_Osman368@nanoff.biz",
+            "OwnedBy": "Domenic Osman",
+            "Street": "Garfield Boulevard, 8232",
+            "Created": "11/30/0464",
+            "LastContacted": "2/19/0857"
+        }
+    ]
 
     const tableData = document.getElementById('table-data');
 
